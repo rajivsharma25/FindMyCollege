@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaFilter, FaChevronDown, FaSearch } from 'react-icons/fa';
-import CollegeCard from '../../components/CollegeCard';
+import CollegeCard from '../../Components/CollegeCard';
 import { assets } from '../../assets/assets';
 
 const Colleges = () => {
