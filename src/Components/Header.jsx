@@ -36,6 +36,16 @@ const Header = () => {
   return (
     <div className={`w-full z-50 py-1 flex justify-center items-center px-4 transition-all duration-300 ${isHome ? `fixed top-0 left-0 ${isScrolled ? 'bg-[#242F42] shadow-md' : 'bg-transparent'}` : 'sticky top-0 bg-[#242F42] shadow-md'}`}>
       <div className="w-full max-w-7xl flex justify-between items-center">
+        {/* Logo - Left side */}
+        <Link to="/">
+          <img
+            src={assets.logo}
+            className="w-32 cursor-pointer"
+            alt="Logo"
+          />
+        </Link>
+
+        {/* Hamburger Menu - Right side on mobile */}
         <div className="lg:hidden">
           <GiHamburgerMenu
             onClick={() => setVisible(true)}
@@ -43,14 +53,6 @@ const Header = () => {
             className="text-white cursor-pointer"
           />
         </div>
-
-        <Link to="/">
-          <img
-            src={assets.logo}
-            className="w-32 mx-auto cursor-pointer"
-            alt="Logo"
-          />
-        </Link>
 
         {/* Desktop Menu */}
         <ul className="hidden lg:flex items-center gap-6 text-[14px] text-gray-200 mx-auto">
@@ -81,9 +83,9 @@ const Header = () => {
         onClick={() => setVisible(false)}
       ></div>
 
-      {/* Sidebar Menu */}
+      {/* Sidebar Menu - Slides from Right */}
       <div
-        className={`fixed top-0 left-0 h-full w-[85%] sm:w-[350px] bg-[#111827] z-50 transition-transform duration-300 ease-out shadow-2xl ${visible ? 'translate-x-0' : '-translate-x-full'}`}
+        className={`fixed top-0 right-0 h-full w-[85%] sm:w-[350px] bg-[#111827] z-50 transition-transform duration-300 ease-out shadow-2xl ${visible ? 'translate-x-0' : 'translate-x-full'}`}
       >
         <div className="flex flex-col h-full">
 
