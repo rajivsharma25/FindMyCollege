@@ -1,9 +1,9 @@
 import React from 'react';
-import HeroSection from '../components/HeroSection';
-import AboutSection from '../components/AboutSection';
-import Features from '../components/Features';
-import UpdateSection from '../components/UpdateSection';
-import TopColleges from '../components/TopColleges';
+import HeroSection from '../Components/HeroSection';
+import AboutSection from '../Components/AboutSection';
+import Features from '../Components/Features';
+import UpdateSection from '../Components/UpdateSection';
+import TopColleges from '../Components/TopColleges';
 
 const Home = () => {
   return (
