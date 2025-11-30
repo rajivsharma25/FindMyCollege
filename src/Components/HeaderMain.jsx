@@ -7,7 +7,7 @@ import { FaFacebookF, FaLinkedinIn, FaInstagram, FaChevronRight } from "react-ic
 import { FaXTwitter } from "react-icons/fa6";
 import { assets } from '../assets/assets';
 
-const Header = () => {
+const HeaderMain = () => {
   const [visible, setVisible] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
@@ -121,7 +121,7 @@ const Header = () => {
                 { name: 'Admissions', path: '/admissions' },
                 { name: 'News', path: '/news' },
                 { name: 'Forum', path: '/forum' },
-                { name: 'Tools', path: '/tools' }  
+                { name: 'Tools', path: '/tools' }
               ].map((item) => (
                 <NavLink
                   key={item.name}
@@ -170,4 +170,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderMain;
