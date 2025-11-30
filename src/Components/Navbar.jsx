@@ -7,7 +7,7 @@ import { FaFacebookF, FaLinkedinIn, FaInstagram, FaChevronRight } from "react-ic
 import { FaXTwitter } from "react-icons/fa6";
 import { assets } from '../assets/assets';
 
-const HeaderMain = () => {
+const Navbar = () => {
   const [visible, setVisible] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
@@ -170,4 +170,4 @@ const HeaderMain = () => {
   );
 };
 
-export default HeaderMain;
+export default Navbar;

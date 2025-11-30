@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Header from "./components/HeaderMain";
+import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import News from "./pages/News";
@@ -41,7 +41,7 @@ import NotFound from "./pages/NotFound";
 const App = () => {
   return (
     <>
-      <Header />
+      <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/news' element={<News />} />
