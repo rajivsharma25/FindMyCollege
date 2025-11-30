@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaFilter, FaChevronDown, FaSearch } from 'react-icons/fa';
-import CollegeCard from '../../components/CollegeCard';
+import CollegeCard from '../../Components/CollegeCard';
 
 const AndhraPradesh = () => {
     const [searchTerm, setSearchTerm] = useState('');

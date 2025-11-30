@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaSearch, FaChevronDown } from 'react-icons/fa';
-import CollegeCard from '../../components/CollegeCard';
+import CollegeCard from '../../Components/CollegeCard';
 
 const Nits = () => {
     const [searchTerm, setSearchTerm] = useState('');
