@@ -3,44 +3,31 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    font-family: Outfit;
-}
+@layer base {
+  html {
+    font-family: "Outfit", sans-serif;
+    accent-color: #CB2027;
+  }
 
-.active:hover {
-  color: white;
-}
-
-@layer utilities {
-  .bg-custom-pattern {
-    background:
-      radial-gradient(circle farthest-side at 0% 50%, #4b7987 23.5%, #0000 0) 31.5px 45px,
-      radial-gradient(circle farthest-side at 0% 50%, #6b8193 24%, #0000 0) 28.5px 45px,
-      linear-gradient(#4b7987 14%, #0000 0, #0000 85%, #4b7987 0) 0 0,
-      linear-gradient(150deg, #4b7987 24%, #6b8193 0, #6b8193 26%, #0000 0, #0000 74%, #6b8193 0, #6b8193 76%, #4b7987 0) 0 0,
-      linear-gradient(30deg, #4b7987 24%, #6b8193 0, #6b8193 26%, #0000 0, #0000 74%, #6b8193 0, #6b8193 76%, #4b7987 0) 0 0,
-      linear-gradient(90deg, #6b8193 2%, #4b7987 0, #4b7987 98%, #6b8193 0%) 0 0 #4b7987;
-    background-size: 60px 90px;
-    background-color: #4b7987;
+  ::selection {
+    background-color: #CB2027;
+    color: white;
   }
 }
+  
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+  }
 
-.card-inner::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 0;
-  width: 0%;
-  height: 100%;
-  background-color: #05143A; 
-  z-index: 0;
-  transition: width 0.3s ease;
-  transform: translateX(-50%);
-}
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #CB2027; 
+  }
 
-.card-inner:hover::before {
-  width: 100%;
-}
-
-
-
+  ::-webkit-scrollbar-thumb:hover {
+    background: #A01A1F; 
+  }
